@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/lovecalculator",
+  "version": "1.1.12",
+  "description": "Love Calculator is a simple tool for calculating love compatibility. It returns the love compatibility percentage between two names.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/lovecalculator-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "love calculator", "love calculator api", "love calculator tool", "love calculator software", "love calculator service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/lovecalculator-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/lovecalculator?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
