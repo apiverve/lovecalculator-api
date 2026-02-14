@@ -13,13 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/lovecalculator';
  */
 async function callLoveCalculatorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            name1: &#x27;John&#x27;,
-            name2: &#x27;Jane&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
