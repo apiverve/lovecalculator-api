@@ -17,14 +17,11 @@ def call_lovecalculator_api():
     Make a GET request to the Love Calculator API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;name1&#x27;: &#x27;John&#x27;, &#x27;name2&#x27;: &#x27;Jane&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
