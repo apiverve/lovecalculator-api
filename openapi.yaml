@@ -1,39 +1,41 @@
 openapi: 3.0.4
 info:
   title: Love Calculator
-  description: Love Calculator is a simple tool for calculating love compatibility. It returns the love compatibility percentage between two names.
+  description: >-
+    Love Calculator is a simple tool for calculating love compatibility. It
+    returns the love compatibility percentage between two names.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/lovecalculator:
     get:
       summary: Calculate Love Compatibility
-      description: Love Calculator is a simple tool for calculating love compatibility. It returns the love compatibility percentage between two names.
+      description: Calculate the love compatibility between two names
       operationId: lovecalculator
       parameters:
-      - name: name1
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The first name to calculate love compatibility
-        example: John
-      - name: name2
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The second name to calculate love compatibility
-        example: Jane
+        - name: name1
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The first name to calculate love compatibility
+          example: John
+        - name: name2
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The second name to calculate love compatibility
+          example: Jane
       responses:
         '200':
           description: Successful Response
@@ -49,23 +51,25 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   name1: Jane
                   name2: John
                   lovePercentage: 62%
-                  response: You have good chemistry. Keep getting to know each other and see where it leads.
+                  response: >-
+                    You have good chemistry. Keep getting to know each other and
+                    see where it leads.
                   additionalText: The love percentage between Jane and John is 62%.
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -73,4 +77,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
