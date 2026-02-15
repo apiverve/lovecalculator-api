@@ -1,1 +1,3 @@
-from .apiClient import LovecalculatorAPIClient
+from .apiClient import LovecalculatorAPIClient, LovecalculatorAPIClientError
+
+__all__ = ['LovecalculatorAPIClient', 'LovecalculatorAPIClientError']
