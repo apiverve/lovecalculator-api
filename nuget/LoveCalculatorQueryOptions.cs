@@ -12,14 +12,12 @@ namespace APIVerve.API.LoveCalculator
     {
         /// <summary>
         /// The first name to calculate love compatibility
-        /// Example: John
         /// </summary>
         [JsonProperty("name1")]
         public string Name1 { get; set; }
 
         /// <summary>
         /// The second name to calculate love compatibility
-        /// Example: Jane
         /// </summary>
         [JsonProperty("name2")]
         public string Name2 { get; set; }
