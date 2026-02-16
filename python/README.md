@@ -44,7 +44,10 @@ from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient
 # Initialize the client with your APIVerve API key
 api = LovecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 ```
 
 ###### Simple Request
@@ -124,7 +130,10 @@ from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient, Lovecalcu
 
 api = LovecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 
 try:
     result = api.execute(query)
@@ -145,7 +154,10 @@ from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient, Lovecalcu
 
 api = LovecalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 
 try:
     result = api.execute(query)
@@ -179,7 +191,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient, LovecalculatorAPIClientError
 
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 
 # Using context manager ensures proper cleanup
 with LovecalculatorAPIClient("[YOUR_API_KEY]") as api:
@@ -205,7 +220,10 @@ from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient
 # Enable debug mode
 api = LovecalculatorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "name1": "John", "name2": "Jane" }
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -220,8 +238,12 @@ from apiverve_lovecalculator.apiClient import LovecalculatorAPIClient
 
 api = LovecalculatorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "name1": "John",
+    "name2": "Jane"
+}
+
 try:
-    query = { "name1": "John", "name2": "Jane" }
     result = api.execute(query)
     print(result)
 finally:
