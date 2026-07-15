@@ -30,7 +30,12 @@ The Love Calculator API provides a simple, reliable way to integrate love calcul
 ```javascript
 async function callLoveCalculatorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/lovecalculator', {
+        const params = new URLSearchParams({
+            name1: 'John',
+            name2: 'Jane'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/lovecalculator?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +55,7 @@ callLoveCalculatorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/lovecalculator?param=value" \
+curl -X GET "https://api.apiverve.com/v1/lovecalculator?name1=John&name2=Jane" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +155,7 @@ go get github.com/apiverve/lovecalculator-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +174,7 @@ go get github.com/apiverve/lovecalculator-api/go
 The Love Calculator API is commonly used for:
 
 - **Web Applications** - Add love calculator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with love calculator capabilities
 - **Data Pipelines** - Process and analyze data at scale
