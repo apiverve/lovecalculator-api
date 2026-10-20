@@ -67,8 +67,8 @@ namespace APIVerve.API.LoveCalculator
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "name1", new ValidationRule { Type = "string", Required = true } },
-            { "name2", new ValidationRule { Type = "string", Required = true } }
+            { "name1", new ValidationRule { Type = "string", Required = true, MaxLength = 100 } },
+            { "name2", new ValidationRule { Type = "string", Required = true, MaxLength = 100 } }
         };
 
         /// <summary>Format validation patterns</summary>
