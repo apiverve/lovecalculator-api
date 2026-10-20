@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Love Calculator
   description: >-
-    Love Calculator is a simple tool for calculating love compatibility. It
-    returns the love compatibility percentage between two names.
+    Love Calculator calculates romantic compatibility between any two names,
+    returning a match percentage and summary text. Paid plans add detailed
+    compatibility advice for the pair.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/lovecalculator:
     get:
-      summary: Calculate Love Compatibility
+      summary: Love Calculator
       description: Calculate the love compatibility between two names
       operationId: lovecalculator
       parameters:
