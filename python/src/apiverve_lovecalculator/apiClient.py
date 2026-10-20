@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,8 +24,8 @@ class ValidationError(LovecalculatorAPIClientError):
 class LovecalculatorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "name1": {"type": "string", "required": True},
-        "name2": {"type": "string", "required": True}
+        "name1": {"type": "string", "required": True, "maxLength": 100},
+        "name2": {"type": "string", "required": True, "maxLength": 100}
     }
 
     # Format validation patterns

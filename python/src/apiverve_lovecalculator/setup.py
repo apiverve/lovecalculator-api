@@ -10,14 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_lovecalculator',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='Love Calculator is a simple tool for calculating love compatibility. It returns the love compatibility percentage between two names.',
+    description='Love Calculator calculates romantic compatibility between any two names, returning a match percentage and summary text. Paid plans add detailed compatibility advice for the pair.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com/marketplace/lovecalculator?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/lovecalculator?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
