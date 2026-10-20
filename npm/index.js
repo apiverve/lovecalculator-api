@@ -30,7 +30,7 @@ class lovecalculatorWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/lovecalculator';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"name1":{"type":"string","required":true},"name2":{"type":"string","required":true}};
+        this.validationRules = {"name1":{"type":"string","required":true,"maxLength":100},"name2":{"type":"string","required":true,"maxLength":100}};
     }
 
     /**
