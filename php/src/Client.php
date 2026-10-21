@@ -19,7 +19,7 @@ use APIVerve\Lovecalculator\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/lovecalculator?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/lovecalculator?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -34,8 +34,8 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'name1' => ['type' => 'string', 'required' => true],
-        'name2' => ['type' => 'string', 'required' => true]
+        'name1' => ['type' => 'string', 'required' => true, 'maxLength' => 100],
+        'name2' => ['type' => 'string', 'required' => true, 'maxLength' => 100]
     ];
 
     /**
