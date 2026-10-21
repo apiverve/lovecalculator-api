@@ -1,7 +1,7 @@
 {
     "name": "apiverve/lovecalculator",
-    "description": "Love Calculator is a simple tool for calculating love compatibility. It returns the love compatibility percentage between two names.",
-    "version": "1.2.0",
+    "description": "Love Calculator calculates romantic compatibility between any two names, returning a match percentage and summary text. Paid plans add detailed compatibility advice for the pair.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "lovecalculator",
-        "love calculator",
         "love calculator api",
-        "love calculator tool",
-        "love calculator software",
-        "love calculator service"
+        "love compatibility test",
+        "calculate love compatibility",
+        "name compatibility test",
+        "relationship compatibility by name"
     ],
-    "homepage": "https://apiverve.com/marketplace/lovecalculator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/lovecalculator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/lovecalculator",
