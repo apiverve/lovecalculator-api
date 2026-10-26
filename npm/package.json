@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/lovecalculator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Love Calculator calculates romantic compatibility between any two names, returning a match percentage and summary text. Paid plans add detailed compatibility advice for the pair.",
   "main": "index.js",
   "types": "index.d.ts",
