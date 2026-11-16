@@ -1,6 +1,6 @@
 name: apiverve_lovecalculator
 description: "Love Calculator calculates romantic compatibility between any two names, returning a match percentage and summary text. Paid plans add detailed compatibility advice for the pair."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/lovecalculator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/lovecalculator-api/tree/main/dart
 
